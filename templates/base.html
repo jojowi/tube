@@ -13,11 +13,13 @@
     {{ template "stylesheets" . }}
     {{ template "css" . }}
     <title>Tube</title>
+    <script src="https://togetherjs.com/togetherjs-min.js"></script>
   </head>
 <body>
   <nav>
     <a href="/">Tube</a>
     <a class="centered" style="text-indent: 0;" href="/upload">Upload</a>
+    <button onclick="TogetherJS(this); return false;">Start TogetherJS</button>
   </nav>
   <main>
     {{template "content" .}}
